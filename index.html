@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            background-image: url('assets/img/fundo.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .header {
+            background-color: #fff; 
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .header img {
+            width: 200px; 
+            height: auto;
+            margin-top: -40px; 
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));  
+        }
+
+        .pokedex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .pokemon-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            position: relative;
+        }
+
+        .pokemon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .pokemon-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .pokemon-card:hover img {
+            transform: scale(1.2);
+        }
+
+        .pokemon-card a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        .pokemon-card span {
+            display: block;
+            font-size: 1em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .pokemon-card p {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+            line-height: 1.3;
+        }
+
+   
+
+        @media (max-width: 600px) {
+            .pokemon-card {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="assets\img\logo.png">
+    </header>
+    <main class="pokedex">
+        <div class="pokemon-card">
+            <a href="pokemon1.html">
+                <img src="assets/img/144.png" alt="Articuno">
+            </a>
+            <a href="pokemon1.html">Articuno</a>
+            <span>#001</span>
+            <p>Ice / Flying</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon2.html">
+                <img src="assets/img/145.png" alt="Zapdos">
+            </a>
+            <a href="pokemon2.html">Zapdos</a>
+            <span>#002</span>
+            <p>Electric / Flying</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon3.html">
+                <img src="assets/img/146.png" alt="Moltres">
+            </a>
+            <a href="pokemon3.html">Moltres</a>
+            <span>#003</span>
+            <p>Fire / Flying</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon4.html">
+                <img src="assets/img/150.png" alt="Mewtwo">
+            </a>
+            <a href="pokemon4.html">Mewtwo</a>
+            <span>#004</span>
+            <p>Psychic</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon5.html">
+                <img src="assets/img/151.png" alt="Mew">
+            </a>
+            <a href="pokemon5.html">Mew</a>
+            <span>#005</span>
+            <p>Psychic</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon6.html">
+                <img src="assets/img/243.png" alt="Raikou">
+            </a>
+            <a href="pokemon6.html">Raikou</a>
+            <span>#006</span>
+            <p>Electric</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon7.html">
+                <img src="assets/img/244.png" alt="Entei">
+            </a>
+            <a href="pokemon7.html">Entei</a>
+            <span>#007</span>
+            <p>Fire</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon8.html">
+                <img src="assets/img/245.png" alt="Suicune">
+            </a>
+            <a href="pokemon8.html">Suicune</a>
+            <span>#008</span>
+            <p>Water</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon9.html">
+                <img src="assets/img/249.png" alt="Lugia">
+            </a>
+            <a href="pokemon9.html">Lugia</a>
+            <span>#009</span>
+            <p>Psychic / Flying</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon10.html">
+                <img src="assets/img/250.png" alt="Ho-Oh">
+            </a>
+            <a href="pokemon10.html">Ho-Oh</a>
+            <span>#010</span>
+            <p>Fire / Flying</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon11.html">
+                <img src="assets/img/251.png" alt="Celebi">
+            </a>
+            <a href="pokemon11.html">Celebi</a>
+            <span>#011</span>
+            <p>Psychic / Grass</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon12.html">
+                <img src="assets/img/377.png" alt="Regirock">
+            </a>
+            <a href="pokemon12.html">Regirock</a>
+            <span>#012</span>
+            <p>Rock</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon13.html">
+                <img src="assets/img/378.png" alt="Regice">
+            </a>
+            <a href="pokemon13.html">Regice</a>
+            <span>#013</span>
+            <p>Ice</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon14.html">
+                <img src="assets/img/379.png" alt="Registeel">
+            </a>
+            <a href="pokemon14.html">Registeel</a>
+            <span>#014</span>
+            <p>Steel</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon15.html">
+                <img src="assets/img/380.png" alt="Latias">
+            </a>
+            <a href="pokemon15.html">Latias</a>
+            <span>#015</span>
+            <p>Dragon / Psychic</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon16.html">
+                <img src="assets/img/381.png" alt="Latios">
+            </a>
+            <a href="pokemon16.html">Latios</a>
+            <span>#016</span>
+            <p>Dragon / Psychic</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon17.html">
+                <img src="assets/img/382.png" alt="Kyogre">
+            </a>
+            <a href="pokemon17.html">Kyogre</a>
+            <span>#017</span>
+            <p>Water</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon18.html">
+                <img src="assets/img/383.png" alt="Groudon">
+            </a>
+            <a href="pokemon18.html">Groudon</a>
+            <span>#018</span>
+            <p>Ground</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon19.html">
+                <img src="assets/img/384.png" alt="Rayquaza">
+            </a>
+            <a href="pokemon19.html">Rayquaza</a>
+            <span>#019</span>
+            <p>Dragon / Flying</p>
+        </div>
+        <div class="pokemon-card">
+            <a href="pokemon20.html">
+                <img src="assets/img/385.png" alt="Jirachi">
+            </a>
+            <a href="pokemon20.html">Jirachi</a>
+            <span>#020</span>
+            <p>Wish
+            </p>
+        </div>
+       
+    </main>
+</body>
+</html>
